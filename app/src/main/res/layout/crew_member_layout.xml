@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       app:cardElevation="8dp"
+       android:layout_margin="24dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:paddingTop="12dp"
+           android:paddingBottom="12dp">
+
+           <ImageView
+               android:id="@+id/iv_image"
+               android:layout_width="match_parent"
+               android:scaleType="centerCrop"
+               android:layout_height="250dp"
+               tools:src="@tools:sample/avatars"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="8dp">
+
+               <TextView
+                   android:id="@+id/tv_name_title"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:text="Name: "
+                   android:textColor="#919191"
+                   android:textSize="20sp"
+                   android:textStyle="bold" />
+               <TextView
+                   android:id="@+id/tv_name"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Shaolin Coder"
+                   android:textSize="22sp"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/tv_agency_title"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Agency: "
+                   android:textStyle="bold"
+                   android:textColor="#919191"
+                   android:textSize="20sp"
+                   />
+               <TextView
+                   android:id="@+id/tv_agency"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="NASA"
+                   android:textSize="22sp"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/tv_status_title"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Status: "
+                   android:textStyle="bold"
+                   android:textColor="#919191"
+                   android:textSize="20sp"
+                   />
+               <TextView
+                   android:id="@+id/tv_status"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Active"
+                   android:textSize="22sp"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/tv_to_know_more"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="To Know More: "
+                   android:textStyle="bold"
+                   android:layout_gravity="center"
+                   android:textColor="#919191"
+                   android:textSize="20sp"
+                   />
+               <TextView
+                   android:id="@+id/tv_wikipedia"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="14dp"
+                   android:paddingRight="14dp"
+                   android:gravity="center"
+                   android:text="https://en.wikipedia.org/wiki/Victor_J._Glover"
+                   android:layout_gravity="center"
+                   android:textSize="22sp"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+</LinearLayout>
